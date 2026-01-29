@@ -73,7 +73,7 @@ class CSVToAppleDictConverter:
             xml_content.append(f'    <d:index d:value="{word_escaped}"/>')
             xml_content.append(f'    <div class="entry">')
             xml_content.append(f'      <h1>{word_escaped}</h1>')
-            xml_content.append(f'      <span class="ipa">[{ipa_escaped}]</span>')
+            xml_content.append(f'      <span class="ipa">| {ipa_escaped} |</span>')
             xml_content.append(f'    </div>')
             xml_content.append('  </d:entry>')
         
@@ -164,7 +164,6 @@ h1 {
     font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif;
     font-size: 1.2em;
     color: #666;
-    background-color: #f9f9f9;
     padding: 2px 5px;
     border-radius: 3px;
     display: inline-block;

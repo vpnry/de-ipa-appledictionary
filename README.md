@@ -1,9 +1,12 @@
 # German IPA Dictionary for macOS
 
-A German dictionary with IPA pronunciations for the native macOS Dictionary app. This project converts a CSV file of German words and their IPA pronunciations into the Apple Dictionary format.
+A German dictionary (~ 364903 entries) with IPA pronunciations for the native macOS Dictionary app. 
+
+This project converts a CSV file of German words and their IPA pronunciations into the Apple Dictionary format.
 
 ## Installation
 
+### Pre-built Apple Dictionary
 For most users, installing the pre-built dictionary is the recommended method.
 
 1.  **Download:** Go to the [Releases page](https://github.com/vpnry/de-ipa-appledictionary/releases) and download the `DE_IPA.dictionary.zip` file.
@@ -16,6 +19,10 @@ For most users, installing the pre-built dictionary is the recommended method.
     - Scroll down and check the box next to **"DE_IPA"** to enable it.
 
 You can now look up German words and see their IPA pronunciation directly in the Dictionary app.
+
+### Yomitan Dictionary
+
+For users who want to use the dictionary with [Yomitan](https://github.com/yomidevs/yomitan), you can download the `yomitan_de_ipa.zip` file from the [Releases page](https://github.com/vpnry/de-ipa-appledictionary/releases) and use it to import it in the Yomitan settings.
 
 ---
 
@@ -101,6 +108,16 @@ Here is an example of the XML entry generated for the word "Hallo":
   </div>
 </d:entry>
 ```
+
+
+### For Yomitan
+
+```bash
+npm install yomichan-dict-builder
+
+node yomitan_export_ipa_dict.js
+```
+
 
 ## License
 
